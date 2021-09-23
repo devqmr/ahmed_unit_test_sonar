@@ -6,7 +6,6 @@ plugins {
 
 
 sonarqube {
-//    androidVariant 'stagingDebug'
     properties {
         property "sonar.projectName", "Android-APPPP"
         property "sonar.projectKey", "com.exa.aaa"
@@ -22,12 +21,7 @@ sonarqube {
                 '**/.gradle/**,' +
                 '**/*Generated.java,'+
                 '**/R.class'
-//        property "sonar.java.coveragePlugin", "jacoco"
-//        property "sonar.junit.reportPaths", "**/test-results/**/*.xml"
         property "sonar.junit.reportPaths", "${project.projectDir}/build/test-results/testDebugUnitTest"
-//        property "sonar.coverage.jacoco.xmlReportPaths", "${project.projectDir}/build/reports/testStagingDebugUnitTestCoverage/*"
-//        property "sonar.groovy.jacoco.reportPath", "${project.projectDir}/build/reports/testStagingDebugUnitTestCoverage/*"
-//        property "sonar.coverage.exclusions", "${coverageExclusions.join(', ')}"
 
     }
 }
@@ -57,21 +51,10 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-//    sourceSets {
-//        main {
-//            java {
-//                srcDirs 'src/main/java', 'src/main/kotlin', 'src/test/kotlin'
-//            }
-//        }
-//    }
 
     sourceSets {
-//        main.java.srcDirs += 'src/main/kotlin'
         test.java.srcDirs += 'src/test/kotlin'
     }
-//    sourceSets {
-//        main.java.srcDirs += 'src/main/kotlin'
-//    }
 
 }
 
