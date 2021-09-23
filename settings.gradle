@@ -1,0 +1,2 @@
+rootProject.name = "Change Languge"
+include ':app'
