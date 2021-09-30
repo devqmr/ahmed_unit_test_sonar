@@ -25,4 +25,14 @@ class FeatureLogicTest {
     fun thirdFunction() {
         assertEquals(2, 1 + 1)
     }
+
+    @Test
+    fun forthFunction() {
+        assertEquals(2, 1 + 1)
+    }
+
+    @Test
+    fun fifthFunction() {
+        assertEquals(4, 1 + 1)
+    }
 }
