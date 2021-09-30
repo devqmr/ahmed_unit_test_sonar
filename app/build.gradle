@@ -9,8 +9,9 @@ sonarqube {
     properties {
         property "sonar.projectName", "Android-APPPP"
         property "sonar.projectKey", "com.exa.aaa"
-        property "sonar.sources", ["src/main/java"]
-        property "sonar.tests", ["src/test/java","src/test/kotlin"]
+        property "sonar.sources", "src/main/java"
+//        property "sonar.tests", ["src/test/java","src/test/kotlin"]
+        property "sonar.tests", ["src/test/java"]
         property "sonar.sourceEncoding", "UTF-8"
         property "sonar.test.inclusions", "**/*Test*/**"
         property "sonar.exclusions", '**/*Test*/**,' +
@@ -51,9 +52,9 @@ android {
         jvmTarget = '1.8'
     }
 
-    sourceSets {
-        test.java.srcDirs += 'src/test/kotlin'
-    }
+//    sourceSets {
+//        test.java.srcDirs += 'src/test/kotlin'
+//    }
 
 }
 
